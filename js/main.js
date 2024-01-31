@@ -11,6 +11,7 @@
             const characters = response.results;
             const ul = document.createElement('ul');
             characters.forEach(character=>{
+          
                 const li = document.createElement('li');
                 const a = document.createElement('a');
                 a.textContent = character['name'];
@@ -29,7 +30,7 @@
         })
         .catch(error=> {
             console.log(error);
-            g
+        
         });
     
     }
@@ -40,19 +41,27 @@
        .then(function(response) {
         filmCon.innerHTML = "";
         const movies = response.results;
-        movies.forEach(movie=>{
+        movies.forEach((movie) =>{
          const template = document.importNode(filmTemplate.content, true);
          const filmBody = template.querySelector(".film-description");
          const filmTitle = template.querySelector(".film-heading");
          filmTitle.innerHTML = movie['title'];
          filmBody.innerHTML = movie ['opening_crawl'];
-
          filmCon.appendChild(template);
-        });
-        
-    })
 
-       .catch();
-    }
+        const index = movies.index(movie);
+         const moviePic = document.createElement("img");
+         moviePic.src = img/(`${index+1}.jpg`);
+            moviePic.addEventListener("click", function(movie){
+    
+            })
+         });
+        filmTitle.appendChild(moviePic);
+
+   })
+   
+    .catch();
+    }        
     getPeople();
+
     })();
