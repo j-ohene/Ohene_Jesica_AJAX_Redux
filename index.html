@@ -5,21 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script defer src="js/main.js"></script>
   </head>
   <body>
     <div class="grid-con">
+      <header class="col-span-full m-col-span-full l-col-span-full xl-col-span-full logo">
+        <img src="img/star-wars-logo.svg" alt="star wars logo">
+      </header>
+      <section class="col-span-full m-col-span-full l-col-span-full xl-col-span-full">
+        <h1> Choose your Character</h1>
+      </section>
       <section class="col-span-full m-col-span-6 l-col-span-6 xl-col-span-6" id="character-box">
         <h2>Characters</h2>
+      <img class="photo">
       </section>
       <section class="col-span-full m-col-span-6 l-col-span-6 xl-col-span-6" id="film-box">
         <h2>Films</h2>
         <div id="film-con">
-          <!--template will be inserted here-->
         </div>
         <template id="film-template">
           <section>
