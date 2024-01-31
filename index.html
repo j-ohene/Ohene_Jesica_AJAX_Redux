@@ -13,11 +13,21 @@
   </head>
   <body>
     <div class="grid-con">
-      <section class="col-span-full">
-        <h1></h1>
-
+      <section class="col-span-full m-col-span-6 l-col-span-6 xl-col-span-6" id="character-box">
+        <h2>Characters</h2>
       </section>
-      </div>
-     
+      <section class="col-span-full m-col-span-6 l-col-span-6 xl-col-span-6" id="film-box">
+        <h2>Films</h2>
+        <div id="film-con">
+          <!--template will be inserted here-->
+        </div>
+        <template id="film-template">
+          <section>
+            <h3 class="film-heading"></h3>
+            <p class="film-description"></p>
+          </section>
+        </template>
+      </section>
+    </div> 
   </body>
 </html>
