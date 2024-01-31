@@ -8,12 +8,9 @@
         fetch(`${baseUrl}people/`)
         .then(response =>response.json())
         .then(function(response){
-            //console.log(response.description);
             const characters = response.results;
             const ul = document.createElement('ul');
             characters.forEach(character=>{
-              // console.log(character['name']);
-               //console.log(character['height']);
                 const li = document.createElement('li');
                 const a = document.createElement('a');
                 a.textContent = character['name'];
@@ -32,22 +29,18 @@
         })
         .catch(error=> {
             console.log(error);
-            //ideallly we would write to the DOM and let user know, something is wrong
+            g
         });
     
     }
     function getTitle(){
-       // console.log("getReview called");
-       //console.log(e.currentTarget.dataset.review)
-       //console.log(this.dataset);
+  
        fetch(`${baseUrl}films/?format=json`)
-       //https://swapi.dev/api/films/2/?format=json
        .then(response => response.json())
        .then(function(response) {
         filmCon.innerHTML = "";
         const movies = response.results;
         movies.forEach(movie=>{
-       //console.log(movie['filmTitle']);
          const template = document.importNode(filmTemplate.content, true);
          const filmBody = template.querySelector(".film-description");
          const filmTitle = template.querySelector(".film-heading");
