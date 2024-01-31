@@ -1,50 +1,7 @@
+
 body{  
-    background:url(/img/starwars-background.jpg);
+    //background:url(/img/starwars-background.jpg);
    
     cursor:url(/img/light-saber-cursor.svg), auto;  
-
-    color: rgb(172, 170, 170);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   }
-   header{
-    background:rgba(27, 25, 25,0.7);
-   }
-
-h1{
-    font-family: 'Sixtyfour', sans-serif;
-    text-align: center;
-    color: goldenrod;
-    font-size: 26;
-    padding:20px;
-}
-   h2{
-    padding-top: 20px;
-    text-align: center;
-   }
-   ul li{
-    list-style: none;
-   }
-   a:hover{
-    color: rgb(220, 214, 214);
-    }
-   a
-   {
-    padding-top:30px;
    }
    
-   #character-box{
-background:rgba(27, 25, 25,0.7);
-   }
-   .logo{
-    max-width: 200px;
-   }
-   #film-box {
-   background:rgba(27, 25, 25,0.7);
-   margin-left: 10px;
-   }
-   .film-heading {
-    padding-left: 10px;
-   }
-   .film-description {
-    padding-left: 10px;
-   }
