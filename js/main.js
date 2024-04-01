@@ -65,7 +65,7 @@
                     filmTitle.addEventListener("click", function () {
                         // Create a container for the movie picture
                         const moviePictureContainer = document.createElement("div");
-                        moviePictureContainer.classList.add("movie-picture-container");
+                        moviePictureContainer.querySelector(".movie-picture-container");
 
                         // Create the movie picture element
                         const moviePicture = document.createElement("img");
